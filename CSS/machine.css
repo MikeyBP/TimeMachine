@@ -1,0 +1,721 @@
+/*Mikey Code Begins*/
+
+body, html {
+	height: 100%;
+	background: -webkit-linear-gradient(top left, #663333 0%, #993366 20%, #EBD044 40%, #CF652A 60%, #AFC13B 80%, #5bbaae 100%);
+}
+
+body {
+	overflow:hidden;
+}
+
+form {
+
+}
+
+div.wrap {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+div.banner {
+	z-index: 2;
+	text-align: center;
+	position: absolute;
+	height: 80%;
+	width: 16.8%;
+}
+
+div.bannerSpin {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	height: 80%;
+	width: 16.8%;
+}
+
+div.bannerClicked {
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	z-index: -1;
+	pointer-events: none;
+}
+
+div#ban1 {
+	left: 0%;
+}
+
+div#ban2 {
+	left: 16.8%;
+}
+
+div#ban3 {
+	left: 33.6%;
+}
+
+div#ban4 {
+	left: 50.4%;
+}
+
+div#ban5 {
+	left: 67.2%;
+}
+
+div#ban6 {
+	left: 84.0%;
+}
+
+div#ban1spin {
+	position: absolute;
+	left: 0%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-play-state: paused;
+}
+
+div#ban2spin {
+	position: absolute;
+	left: 16.8%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-play-state: paused;
+}
+
+div#ban3spin {
+	position: absolute;
+	left: 33.6%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-play-state: paused;
+}
+
+div#ban4spin {
+	position: absolute;
+	left: 50.4%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-play-state: paused;
+}
+
+div#ban5spin {
+	position: absolute;
+	left: 67.2%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-play-state: paused;
+}
+
+div#ban6spin {
+	position: absolute;
+	left: 84.0%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: moveSlideshow 8s linear;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes moveSlideshow {
+    0%   { 
+        -webkit-transform: translateY(0);  
+    }    
+    50% { 
+        -webkit-transform: translateY(-1100%);  
+    }    
+    50.001% { 
+        -webkit-transform: translateY(0);  
+    }    
+    100% { 
+        -webkit-transform: translateY(-1100%);  
+    }
+}
+@-moz-keyframes moveSlideshow {
+    0%   { 
+        -moz-transform:    translateY(0); 
+    }    
+    100% { 
+        -moz-transform:    translateY(-1100%); 
+    }
+}
+
+/*Mikey Code Ends*/
+/* Possesom Code Begins*/
+
+#tmPanel {
+
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	bottom: 0;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url('../tmbgdb.jpg');
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+	z-index: 3;
+}
+/* Possesom Code Ends*/
+/*Mikey Code Begins*/
+
+textarea {
+    resize: none;
+    color: black;
+}
+/*Mikey Code Ends*/
+/* Possesom Code Begins*/
+
+#userWelcome {
+	font-family: Georgia, serif;
+	cursor: default;
+	position: absolute;
+	top: 5%;
+	left: 67.5%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #1B1C1C;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#replyA {
+	box-shadow: 5px 5px 5px #222222;
+	position:absolute;
+	width: 12%;
+	height: 22%;
+	left: 70%;
+	top: 30%;
+	overflow: hidden;
+	border-style: inset;
+    border-width: 2px;
+    border-color: #9D9489;
+    background-color: #DEBA66;
+}
+
+#replyB{
+	box-shadow: 5px 5px 5px #222222;
+	position:absolute;
+	width: 12%;
+	height: 22%;
+	left: 70%;
+	top: 60%;
+	overflow: hidden;
+	border-style: inset;
+    border-width: 2px;
+    border-color: #9D9489;
+    background-color: #DEBA66;
+}
+
+.year {
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 56%,rgba(184,226,246,1) 79%,rgba(182,223,253,1) 100%);
+	width: 75px;
+	opacity: 0.87;
+	height: 50%;
+	border: 2px solid #9AFEFF;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Serif;
+	font-weight: bold;
+	color: #242828;
+	text-shadow: 0px 0px 14px rgba(100, 100, 100, .9);
+}
+
+.tmButt {
+	cursor: pointer;
+	width: 45px;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+}
+
+#bigRed{
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	width: 5%;
+	height: 15%;
+	left: 61%;
+	top: 40%;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Possesom Code Ends*/
+/*Mikey Code Begins*/
+
+#reset {
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	width: 5%;
+	height: 15%;
+	left: 34.5%;
+	top: 40%;
+	font-size: 24px;
+	text-align: center;
+}
+
+#up1000 {
+	position: absolute;
+	top: 10px;
+	left: 41.5%;
+}
+
+#down1000 {
+	position: absolute;
+	top: 160px;
+	left: 41.5%;
+}
+
+#up100 {
+	position: absolute;
+	top: 10px;
+	left: 46.5%;
+}
+
+#down100 {
+	position: absolute;
+	top: 160px;
+	left: 46.5%;
+}
+
+#up10 {
+	position: absolute;
+	top: 10px;
+	left: 51.5%;
+}
+
+#down10 {
+	position: absolute;
+	top: 160px;
+	left: 51.3%;	
+}
+
+#down1 {
+	position: absolute;
+	top: 160px;
+	left: 56.5%;	
+}
+
+#up1 {
+	position: absolute;
+	top: 10px;
+	left: 56.5%;
+}
+
+#y1000 {
+	position: absolute;
+	top: 45px;
+	left: 40.7%;
+	z-index: -4;
+}
+
+#y100 {
+	position: absolute;
+	top: 45px;
+	left: 45.7%;
+	z-index: -4;
+}
+
+#y10 {
+	position: absolute;
+	top: 45px;
+	left: 50.7%;
+	z-index: -4;
+}
+
+#y1 {
+	position: absolute;
+	top: 45px;
+	left: 55.7%;
+	z-index: -4;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(atitle);
+    top: 150px;
+    left: 40%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/*** [Possesom's 1963 Interactable Item] ***/
+
+#phoneClickBox {
+	display: none;
+	z-index: 901;
+	opacity: 0.3;
+	background-color: #d8f5c9;
+	border: solid green 2px;
+	cursor: pointer;
+	position: absolute;
+	left: 51%;
+	top: 29%;
+	width: 10%;
+	height: 18%;
+	text-align: right;
+}
+
+#phoneInfoBox {
+	display: none;
+	z-index: 902;
+	border: solid black 1px;
+	cursor: pointer;
+	position: absolute;
+	left: 65%;
+	top: 20%;
+}
+
+/*Start of Kristian's CSS code for Football*/
+
+#quickread {
+	display: none;
+	z-index: 900;
+	background-color: white;
+	border: 1px solid black;
+	cursor: default;
+	position: absolute;
+	left: 1%;
+	top: 20%;
+	width: 160px;
+	height: 120px;
+}
+
+#football {	
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	z-index: 900;
+}
+
+/*End of Kristian's CSS code for Football*/
+
+/*Mikey Code Begins*/
+
+#tmPanel {
+	z-index:99;
+}
+
+/*** [Comments] ***/
+
+#showPost{
+	z-index: 98;
+    border-radius: 5px;
+	position: absolute;
+	background-color: gray;
+	width: 100px;
+	height: 20px;
+	left: 12%;
+	top: 78.2%;
+}
+
+#showPost p{
+	cursor: pointer;
+	text-align: center;
+	margin: 0px;
+}
+
+#postWrap{
+    border-radius: 5px;
+	display: inline;
+	z-index: 98;
+	position: absolute;
+	background-color: gray;
+	width: 310px;
+	height: 160px;
+	left: 7%;
+	top: 80%;
+}
+
+#submitComment {
+	cursor: pointer;
+	position: absolute;
+	top: 82%;
+	left: 80%;
+}
+
+#commentPost{
+	position: absolute;
+	width: 300px;
+	height: 120px;
+	left: 5px;
+	top: 10px;
+}
+
+.commentWrap{
+	box-shadow: 5px 5px 5px #222222;
+}
+
+#commentWrap15{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap60{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap61{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap62{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap63{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap64{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap65{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap66{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap67{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap68{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+#commentWrap69{
+    border-radius: 5px;
+	position: absolute;
+	display: none;
+	background-color: gray;
+	width: 410px;
+	height: 160px;
+	left: 75px;
+	top: 15px;
+}
+
+.commentDisplay{
+	position: absolute;
+	width: 400px;
+	height: 150px;
+	left: 5px;
+	top: 5px;
+}
+
+.tooltip:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(atitle);
+    top: 150px;
+    left: 40%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 400px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+#map60 {
+	display: none;
+	z-index: 900;
+	background-color: transparent;
+	cursor: pointer;
+	position: absolute;
+	left: 24%;
+	top: 40%;
+	width: 160px;
+	height: 160px;
+}
+
+#smile{
+	display: none;
+	position: absolute;
+	z-index: 900;
+	left: 45%;
+	top: 25%;
+	width: 260px;
+	height: 90px; 
+}
+
+#zapp {	
+	display: none;
+	position: absolute;
+	z-index: 900;
+	top: 32%;
+	left: 30%;
+	width: 200px;
+	height: 150px;
+}
+/*Mikey Code Ends*/
+
+
+/*Kristian's Code - KH*/
+
+/*** [This CSS here is used to give the pictures a display size of 100%x2 when the 6 banners are all viewable on the page - KH ]***/
+
+h2  {
+}
+
+h2 span { 
+	display: none;
+	z-index: 20;
+	left: 5%;
+	top: 0;
+	text-align: center;
+    color: white; 
+	position: absolute;
+	height: auto;
+	width: 80%;
+    font: bold 20px Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    margin:10px 10px 0 0;
+}
+
+/* TL Code */
+
+#ipodText {
+	display: none;
+	z-index: 900;
+	cursor: pointer;
+	position: absolute;
+	left: 10px;
+	top: 150px;
+	width: 160px;
+	height: 160px;
+}
+
+#casette {	
+	display: none;
+	position: absolute;
+	z-index: 900;
+	top: 40%;
+	left: 1%;
+	width: 200px;
+	height: 150px;
+}
+
+#ipod {	
+	display: none;
+	position: absolute;
+	z-index: 900;
+	top: 26%;
+	left: 1%;
+	width: 200px;
+	height: 150px;
+}

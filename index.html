@@ -1,0 +1,76 @@
+<!--Mikey Code Begins-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time-Machine Login</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src='JS/jquery-1.11.3.min.js'></script>
+</head>
+<body>
+<div id="wrapUp" class="closeIt"></div>
+<div id="wrapDown" class="closeIt"></div>
+	<div class="wrapper">
+		<!-- Added in icon -PP -->
+		<div class="icon"><img src="pics/time_icon_small.png"></div>
+		<!-- Added in icon -PP -->
+	<div class="container">
+		<br><br><br><br><br><br><h1>Welcome Time-Traveler</h1>
+<div id="welcome">
+
+<!--Mikey Code Ends-->
+<!--Possesom Code Begins-->
+<br>
+<p> You have discovered the TIME MACHINE. With this device you are able to transport yourself to not just somewhere, but <i>somewhen.</i> Behold the magnitude of the power you hold before your fingertips. You will be able to traverse the fourth dimension and discover a by-gone era which may seem unlike your own. 
+<br><br>
+The TIME MACHINE can only be calibrated to a certain decade, it is set for the <i>1960s.</i> <i>Change the dials</i> as much as you like to find your year within the 60s then <i>activate the machine</i>, and gaze upon the timescape before you.
+</p>
+<br><br>
+<button type="submit" id="continue_button">Continue</button>
+
+
+</div>
+
+<!-- Possesom Code Ends -->
+<!--Mikey Code Begins-->
+
+		<form class="form">
+			<input class="inputText loginText" type="text" id="firstNameLogin" placeholder="First Name">
+			<input class="inputText loginText" type="text" id="lastNameLogin" placeholder="Last Name">
+			<button type="submit" id="login-button" onClick="cookieTest()">Login</button> <!-- TL edit -->
+			<div class="login-help">
+    			<a href="#" id="register">Register</a>
+  			</div>
+		</form>
+	</div>
+
+	<ul class="clocks closeIt">
+		<li><img src="pics/clockF.png"></li>
+		<li><img src="pics/clockA.png"></li>
+		<li><img src="pics/clockC.png"></li>
+		<li><img src="pics/clockE.png"></li>
+		<li><img src="pics/clockD.png"></li>
+		<li><img src="pics/clockB.png"></li>
+		<li><img src="pics/clockE.png"></li>
+		<li><img src="pics/clockB.png"></li>
+		<li><img src="pics/clockA.png"></li>
+		<li><img src="pics/clockG.png"></li>
+	</ul>
+</div>
+<div class="login-card">
+    <h1>Register</h1><br><br><br>
+  <form>
+    <input class="inputText registerText" type="text" id="firstName" placeholder="First Name" autofocus><br><br>
+    <input class="inputText registerText" type="text" id="lastName" placeholder="Last Name"><br><br>
+    <input class="inputText registerText" type="text" id="province" placeholder="Province"><br><br>
+    <input class="inputText registerText" type="text" id="city" placeholder="City"><br><br>
+    <input class="inputText registerText" type="text" id="phoneNumber" placeholder="Phone #" onBlur="phoneDashes()"><br><br><br> <!--KH code-->
+    <input type="button" id="regi" onClick="cookieSave()" value="Submit"><!-- TL edit -->
+  </form>
+    </div>
+        <script src="JS/index.js"></script>
+        <script src="JS/cookies.js"></script>
+    
+  </body>
+</html>
+<!--Mikey Code Ends-->
